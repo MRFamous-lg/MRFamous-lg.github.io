@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/*----nav-bar-----*/
+#navigation{
+    padding-top: 10px;
+    position: fixed;
+    background-color: #fff !important;
+    width: 100%;
+    z-index: 10;
+    height: 12vh;
+}
+.logo{
+    padding-left: 50px;
+
+}
+.logo img{
+    height: 50px;
+    transition: all 0.25s ease;
+
+}
+
+.top-bar ul{
+    float: right;
+    align-items: right;
+    background-color: #fff;
+}
+.top-bar ul li{
+    float: left;
+    align-items: right;
+    background-color: #fff;
+    padding: 0 10px;
+}
+.top-bar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: right;
+    float: left;
+    font-size: 16px;
+    background-color: none;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    visibility: visible;
+    padding: 10px 15px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.25s ease;
+
+}
+
+.top-bar ul li a::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 67, 67, 0.473);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white !important;
+    transition: 0.3s;
+    transform: translateX(-10);
+    display: flex;
+    flex-direction: row;
+}
+
+.top-bar ul li a:after{
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(255, 67, 67, 0.473);
+    transition: 0.3s;
+    transform: translateX(-10);
+    display: flex;
+    flex-direction: row;
+ }
+
+
+.top-bar ul li a:hover:after{
+    width: 100%;
+    color: white !important;
+    transition: 0.3s;
+    transform: translateX(-10);
+    display: flex;
+    flex-direction: row;
+}
+
+.top-bar ul li a:hover::before{
+    width: 100%;
+    color: white !important;
+    transition: 0.3s;
+    transform: translateX(-10);
+    display: flex;
+    flex-direction: row;
+}
+
+/* slider */
+#slider{
+    width: 100%;
+    transition: all 2s ease-in-out;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+
+}
+
+.carousel-caption h5{
+    font-family: Slant;
+    color: #fff;
+    font-size: 50px;
+}
+/* about */
+
+#about{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.container h1{
+    color: #616060;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.container h1::after{
+    content: '';
+    background: #0080FF;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.col-md-6{
+    padding-bottom: 0;
+}
+.col-md-6 p{
+    padding-top: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #ccc;
+    border-radius: 7px;
+    padding: 40px 50px;
+    text-justify: justify;
+
+}
+
+.col-md-6 img{
+    height: 400px;
+    padding-left: 70px;
+    width: 100%;
+}
+.btn a{
+    padding-top: 100px;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a:hover{
+    background: red;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.btn .fa{
+    padding-left: 10px;
+    font-size: 20px;
+    color: red;
+}
+/* photography */
+#photography{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(images/1bgg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+#photography .container h1{
+  color: white;
+}
+#photography .container h1::after{
+    content: '';
+    background: white;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+#photography .row {
+  margin: 15px;
+}
+/* Cinemetography */
+
+#cinemetography{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#cinemetography .col-md-6 video{
+        border-radius: 8px;
+}
+
+#cinemetography .col-md-6 video:hover{
+        transform: scale(1.08);
+        transition: all  0.5s ease;
+}
+/* Get in touch */
+
+#contact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(images/6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.follow{
+    background: #fff;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contact-info .fa{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}

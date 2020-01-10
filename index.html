@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr Famous</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="shorcut icon" type="image/x-icon" href="images/pic.jpg">
+</head>
+<body>
+    <!--Navbar-->
+    <div id="nacs">
+    <section id="navigation">
+        <nav id="navigation-bar">
+            <div class="top-bar">
+                <a class="logo"><img src="images/pic.png"></a>
+                <ul type="none" id="navbar ml-auto">
+                    <li class="navigation-items"><a href="#">Home</a></li>
+                    <li class="navigation-items"><a href="#about">About</a></li>
+                    <li class="navigation-items"><a href="#photography">Photography</a></li>
+                    <li class="navigation-items"><a href="#cinemetography">Cinemetography</a></li>
+                    <li class="navigation-items"><a href="#contact">Get in Touch</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    </div>
+    <!-- slider -->
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+              <li data-target="#headerSlider" data-slide-to="1"></li>
+              <li data-target="#headerSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block img-fluid">
+                <div class="carousel-caption">
+                <h5>Welcome! To My Site</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block img-fluid">
+                <div class="carousel-caption">
+                  <h5>I Am Abullah Asim</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block img-fluid">
+                <div class="carousel-caption">
+                    <h5>Thanks For visiting Us!</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h1>Who Am I</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>My self Abdullah Asim.I fond to make a youtube channel and make it popular.
+                    I am Photographer, Cinemetographer, Videographer.You can see my work by clicking
+                    Cinemetography and Photography in the above nav-bar.You can also visit my channel
+                    by clicking the below button.I am professional in video editing, Photo editing.</p>
+                    <div class="btn"><a target="_blank" href="https://www.youtube.com/channel/UC4xucai8CLOoOq70n9QRCvw">Click to visit</a><i class="fa fa-hand-o-left"></i></div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/pi2.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Photography -->
+    <section id="photography">
+      <div class="container">
+        <h1>Photography</h1>
+  <div class="row">
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i1.jpg" class="img-fluid rounded">
+    </a>
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i2.jpg" class="img-fluid rounded">
+    </a>
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i3.jpg" class="img-fluid rounded">
+    </a>
+  </div>
+  <div class="row">
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i4.jpg" class="img-fluid rounded">
+    </a>
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i5.jpg" class="img-fluid rounded">
+    </a>
+    <a data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+      <img src="images/i6.jpg" class="img-fluid rounded">
+    </a>
+  </div>
+</div>
+    </section>
+<!-- Cinemetography -->
+    <section id="cinemetography">
+      <div class="container">
+        <h1>Cinemetography</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <video  width="500" controls>
+                <source src="images/1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="col-md-6">
+            <video  width="500" controls>
+                <source src="images/2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section id="contact">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <div class="row">
+          <div class="col-lg-12 contact-info">
+             <div class="follow"><b>Address:</b><i class="fa fa-map-marker"></i>Rawalpindi, Pakistan</div>
+             <div class="follow"><b>Phone:</b><i class="fa fa-phone"></i>+92 3219543197</div>
+             <div class="follow"><b>Email:</b><i class="fa fa-envelope-o"></i>askfamians@gmail.com</div>
+             <div class="follow"><label></label><b>Get Social:</b></label>
+                 <a href="https://www.facebook.com/mrfamousvlogger/?ref=page_internal" target="_blank"><i class="fa fa-facebook"></i></a>
+                 <a href="https://www.instagram.com/iam_abdullahasim/" target="_blank"><i class="fa fa-instagram"></i></a>
+                 <a href="https://twitter.com/iamabdullahasim" target="_blank"><i class="fa fa-twitter"></i></a>
+                 <a href="https://www.youtube.com/channel/UC4xucai8CLOoOq70n9QRCvw" target="_blank"><i class="fa fa-youtube-play"></i></a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]')
+    </script>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+      diameter: 56,
+      backgroundColor: 'rgb(255, 82, 82)',
+      textColor: '#fff'
+    })</script>
+    </body>
+</html>
