@@ -3,106 +3,90 @@
     padding: 0;
     margin: 0;
 }
+body{
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
 /*----nav-bar-----*/
-#navigation{
-    padding-top: 10px;
-    position: fixed;
-    background-color: #fff !important;
-    width: 100%;
+#nav-bar{
+    position: sticky;
+    top: 0;
     z-index: 10;
-    height: 12vh;
-}
-.logo{
-    padding-left: 50px;
-
-}
-.logo img{
-    height: 50px;
-    transition: all 0.25s ease;
-
+    transition:;
 }
 
-.top-bar ul{
-    float: right;
-    align-items: right;
-    background-color: #fff;
+.nav-brand img{
+    height: 40px;
+    padding-left: 30px;
+
 }
-.top-bar ul li{
-    float: left;
-    align-items: right;
-    background-color: #fff;
+.navbar-nav li {
     padding: 0 10px;
+
 }
-.top-bar ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    align-items: right;
-    float: left;
+
+.navbar-nav li a {
+  padding: 12px 20px;
+  text-decoration: none;
+  background-color: none;
+  border-radius: 2px;
+  /* margin: 50px 60px; */
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Lato;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  float: right;
+  text-align: left;
+}
+
+
+#nav-bar ul li a::before{
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background: rgba(255,0,0,0.7);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-10);
+  transition: all 0.3s ease;
+}
+
+#nav-bar ul li a:hover:before{
+    width: 100%;
+    transition: all 0.3s ease;
+    transition-delay: 0.2s;
+    animation-delay: 0.2s;
+
+
+}
+.navbar {
+    background: #fff;
+
+}
+.navbar-toggler{
+    border: none!important;
+
+}
+
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
     font-size: 16px;
-    background-color: none;
-    position: relative;
-    display: inline-block;
-    font-weight: bold;
-    visibility: visible;
-    padding: 10px 15px;
-    color: #000;
-    font-family: 'Lato', sans-serif;
-    transition: all 0.25s ease;
-
-}
-
-.top-bar ul li a::before{
-    content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(255, 67, 67, 0.473);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white !important;
-    transition: 0.3s;
-    transform: translateX(-10);
-    display: flex;
-    flex-direction: row;
-}
-
-.top-bar ul li a:after{
-    content: '';
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: white;
-    background-color: rgba(255, 67, 67, 0.473);
-    transition: 0.3s;
-    transform: translateX(-10);
-    display: flex;
-    flex-direction: row;
- }
-
-
-.top-bar ul li a:hover:after{
-    width: 100%;
-    color: white !important;
-    transition: 0.3s;
-    transform: translateX(-10);
-    display: flex;
-    flex-direction: row;
-}
-
-.top-bar ul li a:hover::before{
-    width: 100%;
-    color: white !important;
-    transition: 0.3s;
-    transform: translateX(-10);
-    display: flex;
-    flex-direction: row;
 }
 
 /* slider */
@@ -114,14 +98,15 @@
 .carousel-caption{
     top: 50%;
     transform: translateY(-50%);
-    bottom: initial!important;
+    bottom: initial;
 
 }
 
 .carousel-caption h5{
+  display: inherit;
     font-family: Slant;
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
 }
 /* about */
 
@@ -210,10 +195,15 @@
 #photography .row {
   margin: 15px;
 }
+#photography img{
+  max-width: 100%;
+  height: auto;
+}
 /* Cinemetography */
 
 #cinemetography{
   padding-top: 50px;
+  width: 100%;
   padding-bottom: 50px;
 }
 #cinemetography .col-md-6 video{
@@ -224,10 +214,15 @@
         transform: scale(1.08);
         transition: all  0.5s ease;
 }
+video {
+  width: 100%;
+  height: auto;
+}
 /* Get in touch */
 
 #contact{
   padding-top: 50px;
+  width: 100%;
   padding-bottom: 50px;
   background: url(images/6.jpg);
   background-size: cover;
